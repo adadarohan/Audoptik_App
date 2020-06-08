@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "394905498183",
+    "firebase_url": "https://audoptik-app.firebaseio.com",
+    "project_id": "audoptik-app",
+    "storage_bucket": "audoptik-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394905498183:android:2618dc490af21e39e77762",
+        "android_client_info": {
+          "package_name": "com.example.audoptik_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394905498183-ggrvh1fbtpcuhc8av516c09nlen9qf22.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.audoptik_app",
+            "certificate_hash": "15d9a147c72120558605dbf3b5ffbbda9b87890c"
+          }
+        },
+        {
+          "client_id": "394905498183-iua9h1eb1bs0172euat2de8ra6g3gpln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB08bG5v2ANulSuWR5SrLo4n3I3LezMNxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394905498183-iua9h1eb1bs0172euat2de8ra6g3gpln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

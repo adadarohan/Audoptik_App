@@ -1,4 +1,5 @@
 
+import 'package:audoptik_app/Screens/Login/LoginWidgets/loginform.dart';
 import 'package:flutter/material.dart';
 class MyLogin extends StatelessWidget {
 // This widget is the root of your application.
@@ -20,7 +21,7 @@ class MyLogin extends StatelessWidget {
                     Padding(padding: EdgeInsets.all(40.0), child: Image.asset('assets/audotik_logo.png'),
                     ),
                     SizedBox(height: 20.0),
-                   
+                    myLoginForm(),
                   ],
                 ),
               )
