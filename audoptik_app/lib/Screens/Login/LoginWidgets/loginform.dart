@@ -37,13 +37,15 @@ class _State extends State<myLoginForm> {
   }
   Widget _googleButton() {
     return OutlineButton(
+      
       splashColor: Colors.grey,
       onPressed: () {
         LoginUser(context);
       },
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
       highlightElevation: 0,
-      borderSide: BorderSide(color: Colors.grey),
+      borderSide: BorderSide(color: Colors.grey, width: 28.0),
+      
       child: Padding(
         padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
         child: Row(
