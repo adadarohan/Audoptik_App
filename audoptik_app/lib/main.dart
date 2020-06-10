@@ -1,4 +1,5 @@
 
+import 'package:audoptik_app/Screens/root/root.dart';
 import 'package:audoptik_app/screens/Login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -17,8 +18,7 @@ class MyApp extends StatelessWidget {
       create: (context) => myLoginWidgets(),
       child: MaterialApp(
         
-        home: MyLogin(),
-
+        home: myRootScreen(),
 
       ),
 
