@@ -1,6 +1,5 @@
 
 import 'package:audoptik_app/Screens/root/root.dart';
-import 'package:audoptik_app/screens/Login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'Screens/Login/LoginWidgets/loginwidgets.dart';
