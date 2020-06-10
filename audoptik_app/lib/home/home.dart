@@ -15,12 +15,23 @@ class myHomeScreen extends StatelessWidget {
         child: Text("This is Home"),
         ),
       ),
-      body: Center(child: ButtonTheme(
-        minWidth: 278,
-        height: 86,
-        child: RaisedButton(
-          onPressed: () async{
-            myLoginWidgets _currentUser = Provider.of<myLoginWidgets>(context, listen: false);
+      drawer: new Drawer(
+        
+        child: Container(
+          color: Colors.black54,
+           child:ListView(
+          children: <Widget>[
+           Container(
+             height: 35,
+              width: 45, 
+              child: ButtonTheme(
+             minWidth: 45,
+             height: 35,
+             child:  RaisedButton(
+              child: Text("Log Out", style: TextStyle(fontFamily: "Helvetica", fontSize: 25.0),),
+              color: Colors.orange,
+              onPressed: () async{
+                myLoginWidgets _currentUser = Provider.of<myLoginWidgets>(context, listen: false);
           String _returnString = await _currentUser.signOut();
           if(_returnString == "success"){
             Navigator.pushAndRemoveUntil(context,
@@ -30,16 +41,17 @@ class myHomeScreen extends StatelessWidget {
                     (route) => false
             );
           }
-          },
-          color: Colors.white,
-          child: Text(
-            "Sign Out", 
-            style: TextStyle(fontSize: 34.0),
+              },
+              
             ),
-          
-          ),
-        )
-      )
+           ), 
+              ),
+
+          ],
+        ),
+         ), 
+      ),
+      
      
     );
   }
