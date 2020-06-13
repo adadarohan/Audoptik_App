@@ -1,7 +1,7 @@
 
 
 import 'package:audoptik_app/Screens/buttonsScreens/blindfriendly.dart';
-import 'package:audoptik_app/Screens/buttonsScreens/camera.dart';
+import 'package:audoptik_app/Screens/buttonsScreens/camera/camera.dart';
 import 'package:audoptik_app/Screens/buttonsScreens/list.dart';
 import 'package:audoptik_app/Screens/settings/settings.dart';
 import 'package:flutter/material.dart';
