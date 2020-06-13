@@ -18,30 +18,31 @@ class _myOCRState extends State<myOCR> {
   FlutterMobileVision.start().then((x) => setState(() {}));
 }
   Widget build(BuildContext context) {
-     return new MaterialApp(
-      theme: new ThemeData(
-        primarySwatch: Colors.lime,
-        buttonColor: Colors.lime,
-      ),
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text('Flutter Mobile Vision'),
-        ),
-        body: Center(
-            child: new ListView(
-          children: <Widget>[
-            new Text(_textValue),
-            new RaisedButton(
-              onPressed: _read,
-              child: new Text('Start Scanning'),
-            ),
-          ],
-        )),
-      ),
-    );
+     return Scaffold(
+       backgroundColor: Colors.black54 ,
+       body: ListView(
+         children: <Widget>[
+           Padding(
+             padding: EdgeInsets.all(20.0),
+             child: ButtonTheme(
+               minWidth: 100,
+               height: 65,
+               child: RaisedButton(
+                 child: Text("Start Scanning"),
+                 color: Colors.white,
+                 onPressed: (){
+                   _read();
+
+                 }
+               )
+             )
+           )
+         ]
+       ),
+     );
     
   }
- List<OcrText> texts = [];
+ 
  Future<Null> _read() async {
     List<OcrText> texts = [];
     try {
