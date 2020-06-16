@@ -1,3 +1,4 @@
+import 'package:audoptik_app/Screens/buttonsScreens/camera/widgets/face.dart';
 import 'package:audoptik_app/Screens/buttonsScreens/camera/widgets/ocr.dart';
 import 'package:audoptik_app/home/home.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +13,14 @@ class _myCameraState extends State<myCamera> {
     Navigator.pushAndRemoveUntil(context,
                 MaterialPageRoute(
                     builder: (context) => myHomeScreen()
+                ),
+                    (route) => false
+            );
+  }
+  void facialRecButton(BuildContext context){
+    Navigator.pushAndRemoveUntil(context,
+                MaterialPageRoute(
+                    builder: (context) => myFaceRec(),
                 ),
                     (route) => false
             );
@@ -98,7 +107,9 @@ class _myCameraState extends State<myCamera> {
                   fontSize: 44,
                 ),
               ),
-              onPressed: (){},
+              onPressed: (){
+                facialRecButton(context);
+              },
 
               ),
             ),
