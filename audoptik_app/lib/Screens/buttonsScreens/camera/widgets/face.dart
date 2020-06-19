@@ -113,6 +113,7 @@ class _myFaceRecState extends State<myFaceRec> {
               style: TextStyle(
                 fontSize: 25,
                 color: Colors.white 
+
                 
               ),
               ),
@@ -124,6 +125,7 @@ class _myFaceRecState extends State<myFaceRec> {
               style: TextStyle(
                 fontSize: 25, 
                 color: Colors.white, 
+
               ),
               ),
             ),
@@ -132,6 +134,7 @@ class _myFaceRecState extends State<myFaceRec> {
             child: Text(
               retVal3, 
               style: TextStyle(
+
                 fontSize: 25,
                 color: Colors.white 
               ),
