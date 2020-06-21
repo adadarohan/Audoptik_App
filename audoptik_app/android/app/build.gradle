@@ -53,6 +53,9 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    dependencies{
+        api 'com.google.firebase:firebase-ml-vision-image-label-model:20.0.1'
+    }
 }
 
 flutter {
@@ -63,4 +66,8 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.google.firebase:firebase-analytics:17.2.2'
     implementation 'com.google.firebase:firebase-ml-vision:24.0.3'
+   
+    
 }
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,5 +1,6 @@
 import 'package:audoptik_app/Screens/buttonsScreens/camera/widgets/face.dart';
 import 'package:audoptik_app/Screens/buttonsScreens/camera/widgets/ocr.dart';
+import 'package:audoptik_app/Screens/buttonsScreens/camera/widgets/image-labelling.dart';
 import 'package:audoptik_app/home/home.dart';
 import 'package:flutter/material.dart';
 
@@ -75,7 +76,14 @@ class _myCameraState extends State<myCamera> {
                   fontSize: 44,
                 ),
               ),
-              onPressed: (){},
+              onPressed: (){
+                Navigator.pushAndRemoveUntil(context,
+                MaterialPageRoute(
+                    builder: (context) => myImagelabelling(),
+                ),
+                    (route) => false
+            );
+              },
 
               ),
             ),
