@@ -4,10 +4,14 @@ import 'package:audoptik_app/Screens/buttonsScreens/blindfriendly.dart';
 import 'package:audoptik_app/Screens/buttonsScreens/camera/camera.dart';
 import 'package:audoptik_app/Screens/buttonsScreens/list.dart';
 import 'package:audoptik_app/Screens/settings/settings.dart';
+import 'package:audoptik_app/helper.dart';
 import 'package:flutter/material.dart';
 
 
 class myHomeScreen extends StatelessWidget {
+  static help obj = new help(); 
+  double width = obj.width; 
+  double height = obj.height;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,8 +26,8 @@ class myHomeScreen extends StatelessWidget {
         padding: EdgeInsets.all(20.0),
         children: <Widget>[
           ButtonTheme(
-            minWidth: 65,
-            height: 55,
+            minWidth: width,
+            height: height,
             child: RaisedButton(
             color: Colors.blue,
             
@@ -51,8 +55,8 @@ class myHomeScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(20.0),
             child: ButtonTheme(
-              minWidth: 65,
-              height: 55,
+              minWidth: width,
+              height: height,
               child: RaisedButton(
                   color: Colors.blue,
             
@@ -80,8 +84,8 @@ class myHomeScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(20),
             child:ButtonTheme(
-            minWidth: 65,
-            height: 55,
+            minWidth: width,
+            height: height,
             child: RaisedButton(
             color: Colors.blue,
             
@@ -108,8 +112,8 @@ class myHomeScreen extends StatelessWidget {
           ),
           Padding(padding: EdgeInsets.all(20.0),
           child: ButtonTheme(
-            minWidth: 65,
-            height: 55,
+            minWidth: width,
+            height: height,
             child: RaisedButton(
             color: Colors.blue,
             
@@ -130,8 +134,8 @@ class myHomeScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(20.0), 
             child: ButtonTheme(
-            minWidth: 65,
-            height: 55,
+            minWidth: width,
+            height: height,
             child: RaisedButton(
             color: Colors.blue,
             
