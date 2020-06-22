@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:audoptik_app/helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobile_vision/flutter_mobile_vision.dart';
 
@@ -11,6 +12,9 @@ class myOCR extends StatefulWidget {
 class _myOCRState extends State<myOCR> {
   int _cameraOcr = FlutterMobileVision.CAMERA_BACK;
   String _textValue = "sample";
+  static help obj = new help(); 
+  double width = obj.width;
+  double height = obj.height; 
 
   @override
  void initState() {
@@ -25,8 +29,8 @@ class _myOCRState extends State<myOCR> {
            Padding(
              padding: EdgeInsets.all(20.0),
              child: ButtonTheme(
-               minWidth: 100,
-               height: 65,
+               minWidth: width,
+               height: height,
                child: RaisedButton(
                  child: Text("Start Scanning"),
                  color: Colors.white,

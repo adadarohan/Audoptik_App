@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:audoptik_app/helper.dart';
+
 import 'package:firebase_ml_vision/firebase_ml_vision.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -10,17 +12,22 @@ class myFaceRec extends StatefulWidget {
 }
 
 class _myFaceRecState extends State<myFaceRec> {
+   
   static double rotY; 
   static double rotZ; 
   static double smiling; 
+
   static int id; 
   static bool isFaceDetected = false; 
   static String retVal1 = "error", retval2  = "error", retVal3 = "error"; 
   File pickedImage;
   var imageFile;
   List<Rect> rect = new List<Rect>();
+  
 
- 
+ static help obj = new help(); 
+ static double width_button = obj.width;
+ static double height_button = obj.height; 
 
   Future pickImage() async {
     var awaitImage = await ImagePicker.pickImage(source: ImageSource.camera);
@@ -94,8 +101,8 @@ class _myFaceRecState extends State<myFaceRec> {
           Padding(
             padding: EdgeInsets.all(20.0), 
             child: ButtonTheme(
-              minWidth: 100, 
-              height: 75,
+              minWidth: width_button, 
+              height: height_button,
               child: RaisedButton(
                 child: Text("Start Detection"),
                 onPressed: (){
